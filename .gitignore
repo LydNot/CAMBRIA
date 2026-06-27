@@ -1,0 +1,8 @@
+# venvs — regenerate via setup.sh / build_tl_venv.sh
+arena-tl-venv/
+arena-venv/
+.venv/
+# caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

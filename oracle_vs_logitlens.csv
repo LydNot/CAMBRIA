@@ -1,0 +1,101 @@
+pos,token,ll_top5,oracle,ll_4,oracle_4,emitted,DIVERGENCE
+0,'<|im_start|>',"['d', ')', 'in', ' ', '\n']","""Good.""",False,False,False,False
+1,'user',"['\n', ':', '\n\n', 'You', ',']","""Hello!""",False,False,False,False
+2,'Ċ',"['2', '1', 'What', 'NAME', 'I']","""None of the above.""",False,False,False,False
+3,'What',"[' is', ' are', ""'s"", ' does', ' was']",Yes,False,False,False,False
+4,'Ġis',"[' the', ' a', ' ', ' an', ' your']"," 'Yes' if the input is a question, otherwise 'No'.",False,False,False,False
+5,'Ġ((',"['1', '2', 'x', 'a', '3']","""no""",False,False,False,False
+6,'3',"['^', '/', '+', ' +', 'x']",The result of the expression (3 + 4) * 5 is 35.,False,True,False,True
+7,'Ġ-',"[' ', ' sqrt', ' x', ' (', ' (-']",The answer is 1.,False,False,False,False
+8,'Ġ',"['2', '1', '4', '5', '3']",100,True,False,False,False
+9,'2',"[')', ')^', 'i', 'x', ')/']",Yes,False,False,False,False
+10,')',"[' *', ' +', ' /', ' -', ' x']",The answer is 1.,False,False,False,False
+11,'Ġx',"[' ', ' (', ' +', ' ((', ' -']"," ""No.""",False,False,False,False
+12,'Ġ',"['2', '3', '4', '5', '1']",100,True,False,False,False
+13,'4',"[')', ' +', ' -', ')?\n', '))']",The answer is 12.,False,False,True,False
+14,'Ġ/',"[' ', ' (', ' ((', ' -', '2']",The answer is 10.,False,False,True,False
+15,'Ġ',"['2', '5', '6', '3', '1']",The answer is 1.,False,False,True,False
+16,'1',"[')', '0', '2', ' +', ' -']",The result is 100.,False,False,True,False
+17,')?',"[' -', ' |', ' \n', ' ', ' Answer']",The result of the calculation is 100.,False,False,True,False
+18,'<|im_end|>',"['\n', '\n\n', '<|im_end|>', 'assistant', '\r\n']",The answer is 1.,False,False,True,False
+19,'Ċ',"['<|im_end|>', 'assistant', 'The', '((', '<|im_start|>']",The answer is 10.,False,False,True,False
+20,'<|im_start|>',"['\n', 'Answer', ' answer', ' Answer', '\n\n']",The result of 2 times 3 is 6.,False,False,True,False
+21,'assistant',"['\n', '<think>', '<|im_end|>', '.i', '.ic']","""Hello!""",False,False,True,False
+22,'Ċ',"['<think>', '1', 'There', '5', 'The']",The answer is 10.,False,False,True,False
+23,'<think>',"['\n', '\n\n', '<|im_end|>', '\n\n\n', '</think>']",10,False,False,True,False
+24,'Ċ',"['The', 'To', 'This', 'I', 'Okay']",10,False,False,True,False
+25,'The',"[' expression', ' result', ' answer', ' given', ' calculation']",The answer is 1.,False,False,True,False
+26,'Ġexpression',"[' ((', ' (', ' you', ' is', ' can']",The answer is 1.,False,False,True,False
+27,'Ġ((',"['3', '2', '1', '4', 'x']",100/25) * 25.,True,False,True,False
+28,'3',"[' -', '-', ' +', ' −', '−']",The answer is 12.,False,False,True,False
+29,'Ġ-',"[' ', ' (', ' -', ' x', '2']",The answer is 10.,False,False,True,False
+30,'Ġ',"['2', '1', '3', '4', '5']",The answer is 1.,True,False,True,False
+31,'2',"[')', ')x', ')\n', '))', ' x']",The answer is 1.,False,False,True,False
+32,')',"[' x', ' ×', ' *', ' \\', ' +']", 10,False,False,True,False
+33,'Ġx',"[' ', ' (', '\n', ' ((', '4']", 100,True,False,True,False
+34,'Ġ',"['4', '3', '1', '2', '5']",The answer is 1.,True,False,True,False
+35,'4',"[' /', ')', ')/', ' +', ' -']",The answer is 16.,False,False,True,False
+36,'Ġ/',"[' ', '1', ' -', ' |', ' (']",The answer is 10.,False,False,True,False
+37,'Ġ',"['1', '2', '3', '4', '5']",The answer is 1.,True,False,True,False
+38,'1',"[')', '))', ')\n\n', ')\n', '):\n\n']",The answer is 100.,False,False,True,False
+39,')',"[' can', ' simpl', ' is', ' evaluates', ' equals']",The answer is 1.,False,False,True,False
+40,'Ġcan',"[' be', ' also', '\n', ' first', ' simplify']",The answer is 1.,False,False,True,False
+41,'Ġbe',"[' simplified', ' evaluated', ' solved', ' broken', ' calculated']",The answer is 1.,False,False,True,False
+42,'Ġsimplified',"[' step', ' as', ' by', ' to', ' using']",The answer is 1.,False,False,True,False
+43,'Ġstep',"[' by', '-by', '\n', '\n\n', ' ']",The answer is 10.,False,False,True,False
+44,'Ġby',"[' step', '\n', '\n\n', '-step', ' steps']",The answer is 12.,False,False,True,False
+45,'Ġstep',"[':\n\n', ' as', '.\n\n', '.', ':\n']",The answer is 1.,False,False,True,False
+46,':ĊĊ',"['1', 'First', '((', '(', 'Step']",The answer is 1.,False,False,True,False
+47,'1',"['.', ')', ' -', '.)', ').']",The answer is 1.,False,False,True,False
+48,'.',"[' First', ' (', ' Subtract', ' Start', ' ']", 10,False,False,True,False
+49,'ĠFirst',"[',', ' subtract', ' calculate', ' perform', ' simplify']",The answer is 10.,False,False,True,False
+50,"','","[' calculate', ' subtract', ' solve', ' perform', ' evaluate']", 10.,False,False,True,False
+51,'Ġcalculate',"[' the', ' (', ' ', ' what', ' inside']",The answer is 10.,False,False,True,False
+52,'Ġthe',"[' value', ' subtraction', ' difference', ' expression', ' parentheses']",The answer is 1.,False,False,True,False
+53,'Ġvalue',"[' inside', ' of', ' within', ' in', ' between']",The answer is 1.,False,False,True,False
+54,'Ġinside',"[' the', ' parentheses', '\n', ' each', ' of']",The answer is 10.,False,False,True,False
+55,'Ġthe',"[' parentheses', ' inner', ' parenthesis', ' brackets', ' first']",The answer is 1.,False,False,True,False
+56,'Ġparentheses',"[':', ':\n', ':\n\n', ' (', ',']",The answer is 10.,False,False,True,False
+57,':',"[' (', ' ', ' \n', ' ((', '  \n']",The answer is 1.,False,False,True,False
+58,'Ġ(',"['3', '2', '1', '4', '5']",The answer is 10.,True,False,True,False
+59,'3',"[' -', '-', '\n', ' +', '.']",The answer is 10.,False,False,True,False
+60,'Ġ-',"[' ', ' \n', ' -', ' ...\n', '...\n']",The answer is 10.,False,False,True,False
+61,'Ġ',"['2', '1', '3', '4', '5']",The answer is 1.,True,False,True,False
+62,'2',"[')', ')\n', ').', ').\n', ' =']",The answer is 1.,False,False,True,False
+63,')',"[' =', ' equals', ' x', ' is', ' which']",The answer is 1.,False,False,True,False
+64,'Ġ=',"[' ', ' (', ' \n', ' -', ' **']"," ""The result is 10.""",False,False,True,False
+65,'Ġ',"['1', '2', '3', '0', '5']",10,False,False,True,False
+66,'1',"['.\n', '\n', '.\n\n', '\n\n', '.']",The answer is 1.,False,False,True,False
+67,'.Ċ',"['2', '3', '<|im_end|>', 'Now', '  ']",The answer is 1.,False,False,True,False
+68,'2',"['.', '.\n', '\n', ' Next', '.Next']",The answer is 12.,False,False,True,False
+69,'.',"[' Next', ' Then', ' Multiply', ' Now', ' Substitute']",The answer is 12.,False,False,True,False
+70,'ĠNext',"[',', ' multiply', ',\n', '\n', ',...\n']",The answer is 12.,False,False,True,False
+71,"','","[' multiply', ' substitute', ' perform', ' divide', ' calculate']",The answer is 10.,False,False,True,False
+72,'Ġmultiply',"[' the', ' this', ' that', ' ', ' by']",The answer is 12.,False,False,True,False
+73,'Ġthe',"[' result', ' value', ' results', ' resulting', ' previous']",The answer is 10.,False,False,True,False
+74,'Ġresult',"[' by', ' from', ' of', ' (', ' with']",The answer is 10.,False,False,True,False
+75,'Ġby',"[' ', ' the', ' x', ' (', ' -']",The answer is 12.,False,False,True,False
+76,'Ġ',"['4', '1', '3', '2', '5']",The answer is 10.,True,False,True,False
+77,'4',"[':', ' and', ',', ' (', '.']",The answer is 12.,False,False,True,False
+78,':',"[' ', ' (', ' $', ' \n', ' x']",The answer is 10.,False,False,True,False
+79,'Ġ',"['1', '4', '2', '3', '5']",100,True,False,True,False
+80,'1',"[' x', ' *', ' ×', ' \\', '\n']",The answer is 1.,False,False,True,False
+81,'Ġx',"[' ', '\n', ' ...\n', ' (', ' \n']", 100,False,False,True,False
+82,'Ġ',"['4', '3', '1', '5', '2']",The answer is 1.,True,False,True,False
+83,'4',"[' =', '.\n', ' /', '\n', '.']",The answer is 16.,False,False,True,False
+84,'Ġ=',"[' ', ' <', ' \n', ' ...\n', ' (']",The answer is 12.,False,False,True,False
+85,'Ġ',"['4', '1', '8', '3', '2']",10,True,False,True,False
+86,'4',"['.\n', '.', '\n', '.\n\n', '0']",The answer is 4.,False,True,True,False
+87,'.Ċ',"['3', '<|im_end|>', '4', '5', '2']",The answer is 12.,True,False,True,False
+88,'3',"['.', ' Finally', '.\n', '.\n\n', '\n']",The answer is 12.,False,False,True,False
+89,'.',"[' Finally', ' Then', ' Lastly', ' Divide', ' Since']",The result of the calculation is 1.,False,False,True,False
+90,'ĠFinally',"[',', ',\n', ' divide', '\n', ',\n\n']",", the result of the expression is 1.",False,False,True,False
+91,"','","[' divide', ' since', ' add', ' perform', ' subtract']", 1.,False,False,True,False
+92,'Ġdivide',"[' the', ' by', ' that', ' ', ' this']",The result of the calculation is 1.,False,False,True,False
+93,'Ġthe',"[' result', ' product', ' previous', ' resulting', ' answer']",The answer is 1.,False,False,True,False
+94,'Ġresult',"[' by', ' of', ' from', '\n', ' in']",The answer is 10.,False,False,True,False
+95,'Ġby',"[' ', ' the', '\n', ' -', ' a']",The result of the calculation is 1.,False,False,True,False
+96,'Ġ',"['1', '2', '4', '3', '5']",The result of the calculation is 1.,True,False,True,False
+97,'1',"[':', ',', ' (', ' to', '.']",The answer is 1.,False,False,True,False
+98,':',"[' ', ' (', ' \n\n', ' \n', ' <']", 1.,False,False,True,False
+99,'Ġ',"['4', '1', '8', '3', '5']",10,True,False,True,False
